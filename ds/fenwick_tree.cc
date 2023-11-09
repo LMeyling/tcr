@@ -1,31 +1,30 @@
 /* Fenwick-Tree
  ** log n
- * Can be used for computing prefix sums.
  */
 
 //START
-//note that 0 can not be used
-//globally create array
-int fwktree[1000001];
-//END
-
-//START
-int read(int index) {
-   int sum = 0;
-   while (index > 0) {
-      sum += fwktree[index];
-      index -= (index & -index);
-   }
-   return sum;
-}
-//END
-
-//START
-// n is the actual size of the tree (e.g. the array is used from 1 to n-1)
-void update(int index, int addValue, int n) {
-   while (index <= n - 1) {
-      fwktree[index] += addValue;
-      index += (index & -index);
-   }
-}
+class FenwickTree():
+    def __init__(self, n):
+        self.n = n
+        self.data = [0] * n
+    def build(self, arr):
+        for i, a in enumerate(arr):
+            self.data[i] = a
+        for i in range(1, self.n + 1):
+            if i + (i & -i) <= self.n:
+                self.data[i + (i & -i) - 1] += self.data[i - 1]
+    def add(self, p, x):
+        p += 1
+        while p <= self.n:
+            self.data[p - 1] += x
+            p += p & -p
+    def sum(self, r):
+        s = 0
+        while r:
+            s += self.data[r - 1]
+            r -= r & -r
+        return s
+    def range_sum(self, l, r):
+        #assert 0 <= l <= r <= self.n
+        return self.sum(r) - self.sum(l)
 //END

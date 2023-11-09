@@ -1,77 +1,54 @@
 /* Maximum Bipartite Matching
- ** M\cdot N
- * Finds the maximum bipartite matching in an unweighted graph using DFS. \\
- * \emph{Input:} An unweighted adjacency matrix boolean[M][N] with M nodes being matched to N nodes. \\
- * \emph{Output:} The maximum matching. (For getting the actual matching, little changes have to be made.)
+ ** Fast
  */
 
 //START
-// globally create graph array
-// adjacency matrix but smaller as only edges between M and N exist
-bool bpGraph[M][N];
+class BipartiteMatching:
+    def __init__(self, n, m):
+        self._n = n
+        self._m = m
+        self._to = [[] for _ in range(n)]
 
-// A DFS based recursive function 
-// that returns true if a matching
-// for vertex u is possible
-bool bpm(int u,  vector<bool> &seen, vector<int> &matchR)
-{
-    // Try every job one by one
-    for (int v = 0; v < N; v++)
-    {
-        // If applicant u is interested in 
-        // job v and v is not visited
-        if (bpGraph[u][v] && !seen[v])
-        {
-            // Mark v as visited
-            seen[v] = true; 
- 
-            // If job 'v' is not assigned to an 
-            // applicant OR previously assigned 
-            // applicant for job v (which is matchR[v]) 
-            // has an alternate job available. 
-            // Since v is marked as visited in 
-            // the above line, matchR[v] in the following 
-            // recursive call will not get job 'v' again
-            if (matchR[v] < 0 || bpm(bpGraph, matchR[v],
-                                     seen, matchR))
-            {
-                matchR[v] = u;
-                return true;
-            }
-        }
-    }
-    return false;
-}
- 
-// Returns maximum number
-// of matching from M to N
-int maxBPM()
-{
-    // An array to keep track of the 
-    // applicants assigned to jobs. 
-    // The value of matchR[i] is the 
-    // applicant number assigned to job i,
-    // the value -1 indicates nobody is
-    // assigned.
-    vector<int> matchR (N);
- 
-    // Initially all jobs are available
-    for(int i = 0; i < N; ++i) {
-        matchR[i] = -1;
-    }
- 
-    // Count of jobs assigned to applicants
-    int result = 0; 
-    for (int u = 0; u < M; u++)
-    {
-        // Mark all jobs as not seen 
-        // for next applicant.
-        vector<int> seen (N);
- 
-        // Find if the applicant 'u' can get a job
-        if (bpm(bpGraph, u, seen, matchR))
-            result++;
-    }
-    return result;
-}
+    def add_edge(self, a, b):
+        self._to[a].append(b)
+
+    def solve(self):
+        n, m, to = self._n, self._m, self._to
+        prev = [-1] * n
+        root = [-1] * n
+        p = [-1] * n
+        q = [-1] * m
+        updated = True
+        while updated:
+            updated = False
+            s = []
+            s_front = 0
+            for i in range(n):
+                if p[i] == -1:
+                    root[i] = i
+                    s.append(i)
+            while s_front < len(s):
+                v = s[s_front]
+                s_front += 1
+                if p[root[v]] != -1:
+                    continue
+                for u in to[v]:
+                    if q[u] == -1:
+                        while u != -1:
+                            q[u] = v
+                            p[v], u = u, p[v]
+                            v = prev[v]
+                        updated = True
+                        break
+                    u = q[u]
+                    if prev[u] != -1:
+                        continue
+                    prev[u] = v
+                    root[u] = root[v]
+                    s.append(u)
+            if updated:
+                for i in range(n):
+                    prev[i] = -1
+                    root[i] = -1
+        return [(v, p[v]) for v in range(n) if p[v] != -1]
 //END
