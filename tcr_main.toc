@@ -1,36 +1,50 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}dp}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}LCS}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {1}dp}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}LCS}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}LIS}{2}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}TSP}{2}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}hungarian}{2}{subsection.1.4}%
 \contentsline {section}{\numberline {2}ds}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Fenwick-Tree}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Range count query}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Sorted Set}{3}{subsection.2.3}%
-\contentsline {section}{\numberline {3}graph}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Maximum Bipartite Matching}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}maxflow}{4}{subsection.3.2}%
-\contentsline {section}{\numberline {4}math}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}FFT}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}MOD}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Fast prime check}{7}{subsection.4.3}%
-\contentsline {section}{\numberline {5}misc}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Bootstrap}{7}{subsection.5.1}%
-\contentsline {section}{\numberline {6}more math}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Tree}{8}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Divisability Explanation}{8}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Combinatorics}{8}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Polynomial Interpolation}{8}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Theory}{8}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}Fibonacci Sequence}{8}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Binet's formula}{8}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}Generalization}{8}{subsubsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.3}Pisano Period}{8}{subsubsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.6}Series}{8}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Binomial coefficients}{8}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Catalan numbers}{8}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}Geometry}{8}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}Number Theory}{9}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}Convolution}{9}{subsection.6.11}%
-\contentsline {subsection}{\numberline {6.12}DP Optimization}{9}{subsection.6.12}%
+\contentsline {subsection}{\numberline {2.1}DSU}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Double Prio Q}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}SegTree}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Trie}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Fenwick-Tree}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Range count query}{4}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Range min query}{4}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Sorted Set}{5}{subsection.2.8}%
+\contentsline {section}{\numberline {3}graph}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}MST}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}LCA}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Strongest CC}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Maximum Bipartite Matching}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}maxflow}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}math}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}DET}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}FFT}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}GEO}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Linear Systems}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}MATMUL}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}MATPOW}{12}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}MOD}{13}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Fast prime check}{13}{subsection.4.8}%
+\contentsline {section}{\numberline {5}misc}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}KMP}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Bootstrap}{13}{subsection.5.2}%
+\contentsline {section}{\numberline {6}more math}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Tree}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Divisability Explanation}{14}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Combinatorics}{14}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Polynomial Interpolation}{14}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Theory}{14}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Fibonacci Sequence}{14}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Binet's formula}{14}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Generalization}{14}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.3}Pisano Period}{14}{subsubsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.6}Series}{14}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Binomial coefficients}{14}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Catalan numbers}{14}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Geometry}{14}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}Number Theory}{14}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}Convolution}{15}{subsection.6.11}%
+\contentsline {subsection}{\numberline {6.12}DP Optimization}{15}{subsection.6.12}%
