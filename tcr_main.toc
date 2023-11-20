@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}dp}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}LCS}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}LIS}{2}{subsection.1.2}%
@@ -7,30 +7,30 @@
 \contentsline {section}{\numberline {2}ds}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}DSU}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Double Prio Q}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}SegTree}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}SegTree}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Trie}{4}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Fenwick-Tree}{4}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Range count query}{4}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Range min query}{4}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.6}Range count query}{5}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Range min query}{5}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Sorted Set}{5}{subsection.2.8}%
-\contentsline {section}{\numberline {3}graph}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}MST}{5}{subsection.3.1}%
+\contentsline {section}{\numberline {3}graph}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}MST}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}LCA}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Strongest CC}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Strongest CC}{7}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Maximum Bipartite Matching}{7}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}maxflow}{7}{subsection.3.5}%
 \contentsline {section}{\numberline {4}math}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}DET}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}FFT}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}GEO}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}GEO}{11}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Linear Systems}{11}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}MATMUL}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}MATMUL}{12}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}MATPOW}{12}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}MOD}{13}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Fast prime check}{13}{subsection.4.8}%
 \contentsline {section}{\numberline {5}misc}{13}{section.5}%
 \contentsline {subsection}{\numberline {5.1}KMP}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Bootstrap}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Bootstrap}{14}{subsection.5.2}%
 \contentsline {section}{\numberline {6}more math}{14}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Tree}{14}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Divisability Explanation}{14}{subsection.6.2}%
@@ -41,10 +41,10 @@
 \contentsline {subsubsection}{\numberline {6.5.1}Binet's formula}{14}{subsubsection.6.5.1}%
 \contentsline {subsubsection}{\numberline {6.5.2}Generalization}{14}{subsubsection.6.5.2}%
 \contentsline {subsubsection}{\numberline {6.5.3}Pisano Period}{14}{subsubsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.6}Series}{14}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Binomial coefficients}{14}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Catalan numbers}{14}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}Geometry}{14}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}Number Theory}{14}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.6}Series}{15}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Binomial coefficients}{15}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Catalan numbers}{15}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Geometry}{15}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}Number Theory}{15}{subsection.6.10}%
 \contentsline {subsection}{\numberline {6.11}Convolution}{15}{subsection.6.11}%
 \contentsline {subsection}{\numberline {6.12}DP Optimization}{15}{subsection.6.12}%
