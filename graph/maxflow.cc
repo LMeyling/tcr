@@ -1,5 +1,5 @@
 /* maxflow
- ** fast
+ ** EV^2
  * Finds the greatest flow in a graph. Capacities must be positive.
  */
 

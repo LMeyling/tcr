@@ -1,4 +1,5 @@
 /* Range count query
+ ** log n
  */
 //START
 from bisect import bisect_left
@@ -8,7 +9,6 @@ class RangeCountQuery:
         self.depth = defaultdict(list)
         for i, e in enumerate(arr):
             self.depth[e].append(i)
-
     def count(self, l, r, x):
         """l <= k < r """
         a = self.depth[x]

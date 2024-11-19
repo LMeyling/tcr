@@ -1,5 +1,5 @@
 /* MST
- ** fast
+ ** O(nlogn)
  * 
  */
 

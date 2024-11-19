@@ -1,65 +1,47 @@
 /* LCA
- ** fast
+ ** O(1)
  * input = parent of n-1 verticest (0 is root)
  */
 
 //START
-from sys import stdin
-from collections import deque
+class LCA:
+    def __init__(self, n, graph, root=0):
+        # assert n >= 2
+        self.n = n
+        path = [-1] * (n - 1)
+        nodein = [-1] * n
+        par = [-1] * n
+        curtime = -1
+        todo = [root]
+        while todo:
+            v = todo.pop()
+            path[curtime] = par[v]
+            curtime += 1
+            nodein[v] = curtime
+            for u in graph[v]:
+                if nodein[u] == -1:
+                    par[u] = v
+                    todo.append(u)
 
-class UnionFind():
-    def __init__(self, p):
-        N = len(p)
-        timer = 0
-        cnt = [0] * N
-        que = deque()
-        self.parent_or_size = [-1] * N
-        self.parent = [0] * N
-        self.edge = [0] * N
-        self.order = [0] * N
-        
-        for i in range(N):
-            cnt[p[i]] += 1
-        
-        for i in range(N):
-            if cnt[i] == 0:
-                que.append(i)
-        
-        for _ in range(N - 1):
-            v = que.popleft()
-            par = p[v]
-            x, y = self.leader(v), self.leader(par)
-            if self.parent_or_size[x] > self.parent_or_size[y]: x, y = y, x
-            self.parent_or_size[x] += self.parent_or_size[y]
-            self.parent_or_size[y] = x
-            self.parent[y] = x
-            self.edge[y] = par
-            self.order[y] = timer
-            timer += 1
-            cnt[par] -= 1
-            if cnt[par] == 0: que.append(par)
-        
-        self.order[self.leader(0)] = timer
-    
-    def leader(self, v):
-        if self.parent_or_size[v] < 0: return v
-        self.parent_or_size[v] = self.leader(self.parent_or_size[v])
-        return self.parent_or_size[v]
-    
+        a = [nodein[v] for v in path]
+        m = len(a)
+        log = m.bit_length() - 1
+        self.data = [a] + [[] for i in range(log)]
+        for i in range(log):
+            pre = self.data[i]
+            l = 1 << i
+            self.data[i + 1] = [pre[j] if pre[j] < pre[j + l] else pre[j + l] for j in range(len(pre) - l)]
+
+        self.path = path
+        self.nodein = nodein
+
     def lca(self, u, v):
-        lcav = v
-        while u != v:
-            if self.order[u] < self.order[v]: u, v = v, u
-            lcav = self.edge[v]
-            v = self.parent[v]
-        return lcav
-
-N, Q = map(int, stdin.readline().split())
-p = [0] + list(map(int, stdin.readline().split()))
-
-uf = UnionFind(p)
-
-for _ in range(Q):
-    query = list(map(int, stdin.readline().split()))
-    print(uf.lca(query[0], query[1]))
+        if u == v:
+            return u
+        l, r = self.nodein[u], self.nodein[v]
+        if l > r:
+            l, r = r, l
+        u = (r - l).bit_length() - 1
+        return self.path[
+            self.data[u][l] if self.data[u][l] < self.data[u][r - (1 << u)] else self.data[u][r - (1 << u)]]
 //END

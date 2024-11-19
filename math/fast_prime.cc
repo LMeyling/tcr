@@ -1,5 +1,5 @@
 /* Fast prime check
- ** logN
+ ** logn
  */
  
 //START

@@ -7,7 +7,6 @@ def LIS(A, strict=True):
     from bisect import bisect_left
     T = []
     position = []
-
     for a in A:
         if len(T) == 0 or (strict and T[-1] < a) or (not strict and T[-1] <= a):
             position.append(len(T))

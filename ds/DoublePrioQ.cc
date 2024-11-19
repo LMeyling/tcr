@@ -1,4 +1,5 @@
 /* Double Prio Q
+** log n
  */
 //START
 import sys

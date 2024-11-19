@@ -1,4 +1,5 @@
 /* Trie
+** log n
  */
 //START
 class Trie:
@@ -6,7 +7,6 @@ class Trie:
         self.root = {}
         for word in words:
             self.add(word)
-
     def add(self, word):
         cur = self.root
         for letter in word:
@@ -15,7 +15,6 @@ class Trie:
             else:
                 cur[letter] = {}
                 cur = cur[letter]
-
     def query(self, word):
         max_xor = 0
         cur = self.root

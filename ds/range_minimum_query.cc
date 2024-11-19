@@ -1,4 +1,5 @@
-/* Range min query
+/* Range min query (segtree)
+ ** log n
  */
 //START
 import sys

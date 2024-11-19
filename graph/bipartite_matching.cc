@@ -1,5 +1,5 @@
 /* Maximum Bipartite Matching
- ** Fast
+ ** V*E
  */
 
 //START

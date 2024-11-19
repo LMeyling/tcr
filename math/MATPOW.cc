@@ -1,6 +1,5 @@
-/* MATPOW
- ** N^3
-
+/* Matrices
+ ** n^3
  */
  
 //START

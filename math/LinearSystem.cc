@@ -1,5 +1,5 @@
 /* Linear Systems
- ** N
+ ** n
  * Ax = B or something like that
  */
  
