@@ -1,4 +1,4 @@
-/* TSP
+/* TravelingSalesman
  ** 2n * 2^n 
  */
 

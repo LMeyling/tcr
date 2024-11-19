@@ -1,4 +1,4 @@
-/* DSU
+/* Union Find
  ** n log n
  */
 //START

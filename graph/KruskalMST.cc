@@ -1,4 +1,4 @@
-/* MST
+/* MinimumspanningTree
  ** O(nlogn)
  * 
  */

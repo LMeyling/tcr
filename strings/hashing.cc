@@ -1,6 +1,6 @@
 /* Rolling Hashes
  ** n
- *  Gives Hashes in [0,1<<63]
+ *  Gives (Substring)Hashes in [0,1<<63]
  */
 
 //START

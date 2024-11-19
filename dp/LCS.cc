@@ -1,4 +1,4 @@
-/* LCS
+/* LongestCommonSubsequence
  ** n^2
  */
 

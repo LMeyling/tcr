@@ -1,5 +1,6 @@
 /* Trie
 ** log n
+* Besser Substrings finden
  */
 //START
 class Trie:

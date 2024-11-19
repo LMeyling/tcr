@@ -1,6 +1,6 @@
 /* KMP
  ** n
- *  KMP Array and pattern matching
+ *  KMP Array and pattern matching, find where pattern occurs in text
  */
 
 //START

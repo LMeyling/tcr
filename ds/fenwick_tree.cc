@@ -1,5 +1,6 @@
 /* Fenwick-Tree
  ** log n
+ * Perform Operation on ranges
  */
 
 //START

@@ -1,4 +1,4 @@
-/* LIS
+/* LongestIncreasingSubsequence
  ** n log n
  */
 

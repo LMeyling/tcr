@@ -1,5 +1,6 @@
 /* Floyd Warshall
  ** n^3
+ * Shortest path with negative edges (no negative cycles)
  */
 
 //START

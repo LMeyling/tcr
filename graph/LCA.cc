@@ -1,4 +1,4 @@
-/* LCA
+/* LowestCommonAncestor
  ** O(1)
  * input = parent of n-1 verticest (0 is root)
  */

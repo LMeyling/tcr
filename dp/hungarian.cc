@@ -1,5 +1,6 @@
 /* hungarian
  ** n^3
+ * Max bipartite matching
  */
 
 //START
