@@ -1,13 +1,11 @@
-/* Segment Intersection
+/* Tangents
 * finds external (or internal for negative r) tangets of two circles (c1,r1), (c2,r2)
 * 0 tangents: one circle contains the other
 * 1 if circles are tangent to each other (first point = second point)
 * 2 each gives both tangent points (can be seen as line)
 * for point circle set r2 to 0
  */
-
  //START
-
 def tangents(c1,r1,c2,r2):
     d = c2 - c1
     dr = r1 - r2; d2 = d.dist2(); h2 = d2 - dr * dr
