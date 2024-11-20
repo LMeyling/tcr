@@ -1,6 +1,5 @@
 /* MinimumspanningTree
  ** nlogn
- * 
  */
 
 //START
