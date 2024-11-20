@@ -1,4 +1,4 @@
-/* Point
+/* On Segment
  * checks if a point lies on a segment
  */
 
